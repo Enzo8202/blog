@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import moment from 'moment'
+import moment from 'jalali-moment'
 import parse from 'html-react-parser'
 
 import { getComments } from '../services'
@@ -27,7 +27,7 @@ const Comments = ({ slug }) => {
                             <p className='mb-4'>
                                 <span className='font-semibold'>{comment.name}</span>
                                 {'  '}
-                                {moment(comment.createdAt).format('MMM DD, YYYY')}
+                                {moment(comment.createdAt, 'YYYY/MM/DD').locale('fa').format('YYYY/MM/DD')}
                             </p>
                             <p className='whitespace-pre-line text-gray-600 w-full'>{parse(comment.comment)}</p>
                         </div>

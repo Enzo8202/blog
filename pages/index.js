@@ -8,7 +8,7 @@ export default function Home({ posts }) {
     <div className="container mx-auto px-10 mb-8 ">
       <Head>
         <title>React blog</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icons8-react-100.png" />
       </Head>
       <FeaturedPosts />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { getCategories } from '../services'
 
 const Categories = () => {
-  
+
   const [categories, setCategories] = useState([])
 
   useEffect(() => {
@@ -14,16 +14,18 @@ const Categories = () => {
 
   return (
     <div className='bg-featured-card shadow-sp1 backdrop-blur-sm rounded-lg p-8 mb-8 pb-12'>
-      <h3 className='text-xl text-gray-200 mb-8 font-semibold border-b border-gray-400 pb-4'>
-      دسته بندی ها
+      <h3 className='text-2xl text-gray-200 mb-8 font-semibold border-b border-gray-400 pb-4'>
+        دسته بندی ها
       </h3>
+      <div className='flex flex-wrap'>
       {categories.map((category) => (
         <Link key={category.slug} href={`/category/${category.slug}`}>
-          <span className='cursor-pointer block pb-3 mb-3 text-gray-200'>
-            {category.name}
-          </span>
+            <p className='cursor-pointer  bg-fuchsia-600 m-1 p-2 rounded text-white'>
+              {category.name}
+            </p>
         </Link>
       ))}
+      </div>
     </div>
   )
 }

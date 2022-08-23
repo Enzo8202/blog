@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import moment from 'moment'
+import moment from 'jalali-moment'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -39,7 +39,7 @@ const PostWidget = ({ categories, slug }) => {
           </div>
           <div className='flex-grow ml-4'>
             <p className='text-gray-400 font-xs'>
-              {moment(post.createdAt).format('MMM DD, YYYY')}
+              {moment(post.createdAt, 'YYYY/MM/DD').locale('fa').format('YYYY/MM/DD')}
             </p>
             <div className='text-md text-gray-200 '>
             <Link href={`/post/${post.slug}`} key={post.title}  >
