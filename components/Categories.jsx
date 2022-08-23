@@ -20,7 +20,7 @@ const Categories = () => {
       <div className='flex flex-wrap'>
       {categories.map((category) => (
         <Link key={category.slug} href={`/category/${category.slug}`}>
-            <p className='cursor-pointer  bg-fuchsia-600 m-1 p-2 rounded text-white'>
+            <p className='cursor-pointer text-sm  bg-fuchsia-600 m-0.5 p-1 sm:m-1 sm:p-2 rounded text-white'>
               {category.name}
             </p>
         </Link>
