@@ -46,7 +46,7 @@ const Footer = () => {
           </svg>
         </a>
 
-        <a href="https://github.com/Enzo8202" type="button" className="transition duration-700 hover:text-pink-600  rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0  ease-in-out w-9 h-9 m-1">
+        <a href="https://github.com/erfan-pourazizian" type="button" className="transition duration-700 hover:text-pink-600  rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0  ease-in-out w-9 h-9 m-1">
           <svg aria-hidden="true"
             focusable="false"
             data-prefix="fab"
