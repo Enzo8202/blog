@@ -50,11 +50,11 @@ const CommentsForm = ({ slug }) => {
     }
     return (
         <div className='bg-white shadow-lg rounded-lg p-8 pb-12 mb-8'>
-            <h3 className='text-xl mb-8 font-semibold border-b pb-4'>کامنت بگذارید</h3>
+            <h3 className='text-3xl mb-8 font-semibold border-b pb-4'>کامنت بگذارید</h3>
             <div className='grid grid-cols-1 gap-4 mb-4'>
                 <textarea
                     ref={commentEl}
-                    className="p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+                    className="p-4 outline-none text-lg w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
                     placeholder='کامنت'
                     name="comment"
                 />
@@ -62,13 +62,13 @@ const CommentsForm = ({ slug }) => {
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4'>
                 <input type="text"
                     ref={nameEl}
-                    className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+                    className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700 text-lg"
                     placeholder='نام'
                     name="name"
                 />
                 <input type="email"
                     ref={emailEl}
-                    className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+                    className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700 text-lg"
                     placeholder='ایمیل'
                     name="email"
                 />

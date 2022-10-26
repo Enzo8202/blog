@@ -12,7 +12,7 @@ import {
 
 const PostDetails = ({ post }) => {
   return (
-    <div className="container mx-auto pb-10 mb-8">
+    <div className="container mx-auto px-10 mb-8">
       <Head>
         <title>{post.slug} | React-Blog</title>
         <link rel="icon" href="/icons8-react-100.png" />
