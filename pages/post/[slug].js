@@ -1,6 +1,6 @@
 import React from "react";
 import { getPosts, getPostDetails } from "../../services";
-import { useRouter } from "next/dist/client/router";
+import Head from "next/head";
 import {
   PostDetail,
   Categories,
@@ -13,6 +13,10 @@ import {
 const PostDetails = ({ post }) => {
   return (
     <div className="container mx-auto pb-10 mb-8">
+      <Head>
+        <title>{post.slug} | React-Blog</title>
+        <link rel="icon" href="/icons8-react-100.png" />
+      </Head>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="col-span-1 lg:col-span-8">
           <PostDetail post={post} />
@@ -49,6 +53,6 @@ export async function getStaticPaths() {
 
   return {
     paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
-    fallback: true
+    fallback: true,
   };
 }
