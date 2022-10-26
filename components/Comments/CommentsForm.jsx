@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
 
-import { submitComment } from "../services";
+import { submitComment } from "../../services";
 
 const CommentsForm = ({ slug }) => {
     const [error, setError] = useState(false)
-    const [localStorage, setLocalStorage] = useState(null)
     const [showSuccessMessage, setShowSuccessMessage] = useState(false)
     const commentEl = useRef()
     const nameEl = useRef()

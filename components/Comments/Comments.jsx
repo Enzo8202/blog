@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import moment from 'jalali-moment'
 import parse from 'html-react-parser'
 
-import { getComments } from '../services'
+import { getComments } from '../../services'
 
 const Comments = ({ slug }) => {
 
@@ -11,7 +11,7 @@ const Comments = ({ slug }) => {
     useEffect(() => {
         getComments(slug)
             .then((result) => setComments(result))
-    }, [])
+    }, [slug])
 
     return (
         <>

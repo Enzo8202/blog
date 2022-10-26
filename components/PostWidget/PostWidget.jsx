@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 
-import { getRecentPosts, getSimilarPosts } from '../services'
+import { getRecentPosts, getSimilarPosts } from '../../services'
 
 const PostWidget = ({ categories, slug }) => {
   const [relatedPosts, setRelatedPosts] = useState([]);
@@ -17,7 +17,7 @@ const PostWidget = ({ categories, slug }) => {
       getRecentPosts()
         .then((result) => setRelatedPosts(result))
     }
-  }, [slug])
+  }, [slug,categories])
 
 
 
