@@ -11,10 +11,11 @@ import {
 } from "../../components";
 
 const PostDetails = ({ post }) => {
+
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
-        <title>{post.slug} | React-Blog</title>
+        <title>post details | React-Blog</title>
         <link rel="icon" href="/icons8-react-100.png" />
       </Head>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
