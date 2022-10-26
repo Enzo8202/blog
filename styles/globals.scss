@@ -70,3 +70,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#nprogress .bar {
+  background: rgb(212, 227, 0) !important;
+  height: 4px !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: rgb(212, 227, 0) !important;
+  border-left-color: rgb(212, 227, 0) !important;
+}
