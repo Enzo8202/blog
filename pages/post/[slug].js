@@ -1,6 +1,7 @@
 import React from "react";
 import { getPosts, getPostDetails } from "../../services";
 import Head from "next/head";
+import { useRouter } from "next/dist/client/router";
 import {
   PostDetail,
   Categories,
@@ -8,10 +9,16 @@ import {
   Author,
   Comments,
   CommentsForm,
+  Loader
 } from "../../components";
 
 const PostDetails = ({ post }) => {
 
+  const router = useRouter();
+
+  if(router.isFallback) {
+    return <Loader/>
+  }
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>

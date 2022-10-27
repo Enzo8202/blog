@@ -9,3 +9,4 @@ export { default as CommentsForm } from './Comments/CommentsForm';
 export { default as FeaturedPostCard } from './Sections/FeaturedPostCard';
 export { default as FeaturedPosts } from './Sections/FeaturedPosts';
 export { default as Footer } from './Footer';
+export { default as Loader } from './Loader';
