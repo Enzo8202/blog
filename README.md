@@ -1,34 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### [Live Site](https://blog-enzo8202.vercel.app/)
 
-## Getting Started
+![blog-banner](https://user-images.githubusercontent.com/91010211/198377891-459d4f53-9f65-47d7-951f-a70d1c76b319.png)
 
-First, run the development server:
+#### this is a respository  for an next JS blog app with graphql request.hope you enjoy it
 
-```bash
-npm run dev
-# or
-yarn dev
+### Folder Structure
+```
+.
+|   .env
+|   .eslintrc.json
+|   .gitignore
+|   next.config.js
+|   output.doc
+|   package-lock.json
+|   package.json
+|   postcss.config.js
+|   README.md
+|   tailwind.config.js
+|   
++---components
+|   |   index.js
+|   |   Layout.jsx
+|   |   Loader.jsx
+|   |   
+|   +---Author
+|   |       Author.jsx
+|   |       index.js
+|   |       
+|   +---Categories
+|   |       Categories.jsx
+|   |       index.js
+|   |       
+|   +---Comments
+|   |       Comments.jsx
+|   |       CommentsForm.jsx
+|   |       
+|   +---Footer
+|   |       Footer.jsx
+|   |       index.js
+|   |       
+|   +---Header
+|   |       Header.jsx
+|   |       index.js
+|   |       
+|   +---PostCards
+|   |       index.js
+|   |       PostCard.jsx
+|   |       
+|   +---PostDetail
+|   |       index.js
+|   |       PostDetail.jsx
+|   |       
+|   +---PostWidget
+|   |       index.js
+|   |       PostWidget.jsx
+|   |       
+|   \---Sections
+|           FeaturedPostCard.jsx
+|           FeaturedPosts.jsx
+|           
++---pages
+|   |   index.js
+|   |   _app.js
+|   |   
+|   +---api
+|   |       comments.js
+|   |       
+|   +---category
+|   |       [slug].js
+|   |       
+|   \---post
+|           [slug].js
+|           
++---public
+|   |   bg.png
+|   |   icons8-react-100.png
+|   |   
+|   \---font
+|           MarkaziText-Roman-VF.ttf
+|           
++---services
+|       index.js
+|       
+\---styles
+        globals.scss
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### how to Setup ::heavy_check_mark: <br/>
+1: ``npm install``<br/>
+2: ``npm run dev``
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
